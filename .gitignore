@@ -1,0 +1,11 @@
+Codefarts.Utilities PCL/obj/
+codealike.json
+Codefarts.Utilities PCL/bin/
+Codefarts.Utilities.Tests/obj/
+Codefarts.UtilitiesNET35/obj/
+Codefarts.UtilitiesNET45/obj/
+Codefarts.Utilities.TestsNETCore/obj/
+packages/
+Codefarts.UtiltiesNETStd20/obj/
+Codefarts.Utilities.TestsNETCore/bin/
+Codefarts.UtiltiesNETStd20/bin/
