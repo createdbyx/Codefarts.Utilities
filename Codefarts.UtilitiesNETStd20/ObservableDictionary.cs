@@ -6,6 +6,7 @@
 //   Provides a generic observable dictionary implementation.
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
+
 namespace System.Collections.ObjectModel
 {
     using System;
@@ -55,13 +56,11 @@ namespace System.Collections.ObjectModel
         /// </summary>
         private readonly List<TValue> valuesList = new List<TValue>();
 
-        #region IDictionary<TKey,TValue> Members
-
         /// <summary>
-        /// Gets an <see cref="T:System.Collections.ICollection"/> object containing the keys of the <see cref="T:System.Collections.IDictionary"/> object.
+        /// Gets an <see cref="System.Collections.ICollection"/> object containing the keys of the <see cref="System.Collections.IDictionary"/> object.
         /// </summary>
         /// <returns>
-        /// An <see cref="T:System.Collections.ICollection"/> object containing the keys of the <see cref="T:System.Collections.IDictionary"/> object.
+        /// An <see cref="System.Collections.ICollection"/> object containing the keys of the <see cref="System.Collections.IDictionary"/> object.
         /// </returns>
         ICollection IDictionary.Keys
         {
@@ -72,10 +71,10 @@ namespace System.Collections.ObjectModel
         }
 
         /// <summary>
-        /// Gets an <see cref="T:System.Collections.ICollection"/> object containing the values in the <see cref="T:System.Collections.IDictionary"/> object.
+        /// Gets an <see cref="System.Collections.ICollection"/> object containing the values in the <see cref="System.Collections.IDictionary"/> object.
         /// </summary>
         /// <returns>
-        /// An <see cref="T:System.Collections.ICollection"/> object containing the values in the <see cref="T:System.Collections.IDictionary"/> object.
+        /// An <see cref="System.Collections.ICollection"/> object containing the values in the <see cref="System.Collections.IDictionary"/> object.
         /// </returns>
         ICollection IDictionary.Values
         {
@@ -86,7 +85,7 @@ namespace System.Collections.ObjectModel
         }
 
         /// <summary>
-        /// Gets an <see cref="ICollection{T}"/> containing the keys of the <see cref="IDictionary{TKey,TValue}"/>. 
+        /// Gets an <see cref="ICollection{T}"/> containing the keys of the <see cref="IDictionary{TKey,TValue}"/>.
         /// </summary>
         public ICollection<TKey> Keys
         {
@@ -97,7 +96,7 @@ namespace System.Collections.ObjectModel
         }
 
         /// <summary>
-        /// Gets an <see cref="ICollection{T}"/> containing the values in the <see cref="IDictionary{TKey,TValue}"/>. 
+        /// Gets an <see cref="ICollection{T}"/> containing the values in the <see cref="IDictionary{TKey,TValue}"/>.
         /// </summary>
         public ICollection<TValue> Values
         {
@@ -212,8 +211,6 @@ namespace System.Collections.ObjectModel
             return true;
         }
 
-        #endregion
-
         /// <summary>
         /// Occurs when an item is added, removed, changed, moved, or the entire list is refreshed.
         /// </summary>
@@ -235,13 +232,11 @@ namespace System.Collections.ObjectModel
             }
         }
 
-        #region ICollection<KeyValuePair<TKey,TValue>> Members
-
         /// <summary>
-        /// Gets a value indicating whether access to the <see cref="T:System.Collections.ICollection"/> is synchronized (thread safe).
+        /// Gets a value indicating whether access to the <see cref="System.Collections.ICollection"/> is synchronized (thread safe).
         /// </summary>
         /// <returns>
-        /// true if access to the <see cref="T:System.Collections.ICollection"/> is synchronized (thread safe); otherwise, false.
+        /// true if access to the <see cref="System.Collections.ICollection"/> is synchronized (thread safe); otherwise, false.
         /// </returns>
         /// <exception cref="NotImplementedException">
         /// Not implemented.
@@ -255,10 +250,10 @@ namespace System.Collections.ObjectModel
         }
 
         /// <summary>
-        /// Gets an object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection"/>.
+        /// Gets an object that can be used to synchronize access to the <see cref="System.Collections.ICollection"/>.
         /// </summary>
         /// <returns>
-        /// An object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection"/>.
+        /// An object that can be used to synchronize access to the <see cref="System.Collections.ICollection"/>.
         /// </returns>
         object ICollection.SyncRoot
         {
@@ -283,10 +278,10 @@ namespace System.Collections.ObjectModel
         }
 
         /// <summary>
-        /// Gets a value indicating whether the <see cref="T:System.Collections.IDictionary"/> object has a fixed size.
+        /// Gets a value indicating whether the <see cref="System.Collections.IDictionary"/> object has a fixed size.
         /// </summary>
         /// <returns>
-        /// true if the <see cref="T:System.Collections.IDictionary"/> object has a fixed size; otherwise, false.
+        /// true if the <see cref="System.Collections.IDictionary"/> object has a fixed size; otherwise, false.
         /// </returns>
         /// <exception cref="NotImplementedException">
         /// Not implemented.
@@ -322,11 +317,11 @@ namespace System.Collections.ObjectModel
         /// <param name="key">
         /// The key of the element to get or set. 
         /// </param>
-        /// <exception cref="T:System.ArgumentNullException">
+        /// <exception cref="System.ArgumentNullException">
         /// <paramref name="key"/> is null. 
         /// </exception>
-        /// <exception cref="T:System.NotSupportedException">
-        /// The property is set and the <see cref="T:System.Collections.IDictionary"/> object is read-only.-or- The property is set, <paramref name="key"/> does not exist in the collection, and the <see cref="T:System.Collections.IDictionary"/> has a fixed size. 
+        /// <exception cref="System.NotSupportedException">
+        /// The property is set and the <see cref="System.Collections.IDictionary"/> object is read-only.-or- The property is set, <paramref name="key"/> does not exist in the collection, and the <see cref="System.Collections.IDictionary"/> has a fixed size. 
         /// </exception>
         /// <exception cref="NotImplementedException">
         /// Not implemented.
@@ -358,22 +353,22 @@ namespace System.Collections.ObjectModel
         }
 
         /// <summary>
-        /// Copies the elements of the <see cref="T:System.Collections.ICollection"/> to an <see cref="T:System.Array"/>, starting at a particular <see cref="T:System.Array"/> index.
+        /// Copies the elements of the <see cref="System.Collections.ICollection"/> to an <see cref="System.Array"/>, starting at a particular <see cref="System.Array"/> index.
         /// </summary>
         /// <param name="array">
-        /// The one-dimensional <see cref="T:System.Array"/> that is the destination of the elements copied from <see cref="T:System.Collections.ICollection"/>. The <see cref="T:System.Array"/> must have zero-based indexing. 
+        /// The one-dimensional <see cref="System.Array"/> that is the destination of the elements copied from <see cref="System.Collections.ICollection"/>. The <see cref="System.Array"/> must have zero-based indexing. 
         /// </param>
         /// <param name="index">
         /// The zero-based index in <paramref name="array"/> at which copying begins. 
         /// </param>
-        /// <exception cref="T:System.ArgumentNullException">
+        /// <exception cref="System.ArgumentNullException">
         /// <paramref name="array"/> is null. 
         /// </exception>
-        /// <exception cref="T:System.ArgumentOutOfRangeException">
+        /// <exception cref="System.ArgumentOutOfRangeException">
         /// <paramref name="index"/> is less than zero. 
         /// </exception>
-        /// <exception cref="T:System.ArgumentException">
-        /// <paramref name="array"/> is multidimensional.-or- The number of elements in the source <see cref="T:System.Collections.ICollection"/> is greater than the available space from <paramref name="index"/> to the end of the destination <paramref name="array"/>.-or-The type of the source <see cref="T:System.Collections.ICollection"/> cannot be cast automatically to the type of the destination <paramref name="array"/>.
+        /// <exception cref="System.ArgumentException">
+        /// <paramref name="array"/> is multidimensional.-or- The number of elements in the source <see cref="System.Collections.ICollection"/> is greater than the available space from <paramref name="index"/> to the end of the destination <paramref name="array"/>.-or-The type of the source <see cref="System.Collections.ICollection"/> cannot be cast automatically to the type of the destination <paramref name="array"/>.
         /// </exception>
         /// <exception cref="NotImplementedException">
         /// Not implemented.
@@ -449,22 +444,22 @@ namespace System.Collections.ObjectModel
         }
 
         /// <summary>
-        /// Adds an element with the provided key and value to the <see cref="T:System.Collections.IDictionary"/> object.
+        /// Adds an element with the provided key and value to the <see cref="System.Collections.IDictionary"/> object.
         /// </summary>
         /// <param name="key">
-        /// The <see cref="T:System.Object"/> to use as the key of the element to add. 
+        /// The <see cref="System.Object"/> to use as the key of the element to add. 
         /// </param>
         /// <param name="value">
-        /// The <see cref="T:System.Object"/> to use as the value of the element to add. 
+        /// The <see cref="System.Object"/> to use as the value of the element to add. 
         /// </param>
-        /// <exception cref="T:System.ArgumentNullException">
+        /// <exception cref="System.ArgumentNullException">
         /// <paramref name="key"/> is null. 
         /// </exception>
-        /// <exception cref="T:System.ArgumentException">
-        /// An element with the same key already exists in the <see cref="T:System.Collections.IDictionary"/> object. 
+        /// <exception cref="System.ArgumentException">
+        /// An element with the same key already exists in the <see cref="System.Collections.IDictionary"/> object. 
         /// </exception>
-        /// <exception cref="T:System.NotSupportedException">
-        /// The <see cref="T:System.Collections.IDictionary"/> is read-only.-or- The <see cref="T:System.Collections.IDictionary"/> has a fixed size. 
+        /// <exception cref="System.NotSupportedException">
+        /// The <see cref="System.Collections.IDictionary"/> is read-only.-or- The <see cref="System.Collections.IDictionary"/> has a fixed size. 
         /// </exception>
         void IDictionary.Add(object key, object value)
         {
@@ -472,15 +467,15 @@ namespace System.Collections.ObjectModel
         }
 
         /// <summary>
-        /// Determines whether the <see cref="T:System.Collections.IDictionary"/> object contains an element with the specified key.
+        /// Determines whether the <see cref="System.Collections.IDictionary"/> object contains an element with the specified key.
         /// </summary>
         /// <returns>
-        /// true if the <see cref="T:System.Collections.IDictionary"/> contains an element with the key; otherwise, false.
+        /// true if the <see cref="System.Collections.IDictionary"/> contains an element with the key; otherwise, false.
         /// </returns>
         /// <param name="key">
-        /// The key to locate in the <see cref="T:System.Collections.IDictionary"/> object.
+        /// The key to locate in the <see cref="System.Collections.IDictionary"/> object.
         /// </param>
-        /// <exception cref="T:System.ArgumentNullException">
+        /// <exception cref="System.ArgumentNullException">
         /// <paramref name="key"/> is null. 
         /// </exception>
         bool IDictionary.Contains(object key)
@@ -489,10 +484,10 @@ namespace System.Collections.ObjectModel
         }
 
         /// <summary>
-        /// Returns an <see cref="T:System.Collections.IDictionaryEnumerator"/> object for the <see cref="T:System.Collections.IDictionary"/> object.
+        /// Returns an <see cref="System.Collections.IDictionaryEnumerator"/> object for the <see cref="System.Collections.IDictionary"/> object.
         /// </summary>
         /// <returns>
-        /// An <see cref="T:System.Collections.IDictionaryEnumerator"/> object for the <see cref="T:System.Collections.IDictionary"/> object.
+        /// An <see cref="System.Collections.IDictionaryEnumerator"/> object for the <see cref="System.Collections.IDictionary"/> object.
         /// </returns>
         IDictionaryEnumerator IDictionary.GetEnumerator()
         {
@@ -500,25 +495,21 @@ namespace System.Collections.ObjectModel
         }
 
         /// <summary>
-        /// Removes the element with the specified key from the <see cref="T:System.Collections.IDictionary"/> object.
+        /// Removes the element with the specified key from the <see cref="System.Collections.IDictionary"/> object.
         /// </summary>
         /// <param name="key">
         /// The key of the element to remove. 
         /// </param>
-        /// <exception cref="T:System.ArgumentNullException">
+        /// <exception cref="System.ArgumentNullException">
         /// <paramref name="key"/> is null. 
         /// </exception>
-        /// <exception cref="T:System.NotSupportedException">
-        /// The <see cref="T:System.Collections.IDictionary"/> object is read-only.-or- The <see cref="T:System.Collections.IDictionary"/> has a fixed size. 
+        /// <exception cref="System.NotSupportedException">
+        /// The <see cref="System.Collections.IDictionary"/> object is read-only.-or- The <see cref="System.Collections.IDictionary"/> has a fixed size. 
         /// </exception>
         public void Remove(object key)
         {
             throw new NotImplementedException();
         }
-
-        #endregion
-
-        #region IEnumerable<KeyValuePair<TKey,TValue>> Members
 
         /// <summary>
         /// Returns an enumerator that iterates through the <see cref="IDictionary{TKey,TValue}"/>. 
@@ -532,10 +523,6 @@ namespace System.Collections.ObjectModel
             }
         }
 
-        #endregion
-
-        #region IEnumerable Members
-
         /// <summary>
         /// Returns an enumerator that iterates through the <see cref="IDictionary{TKey,TValue}"/>. 
         /// </summary>
@@ -547,8 +534,6 @@ namespace System.Collections.ObjectModel
                 yield return new KeyValuePair<TKey, TValue>(key, this.valuesList[this.keysList.IndexOf(key)]);
             }
         }
-
-        #endregion
 
         /// <summary>
         /// Raises the <see cref="PropertyChanged"/> event.
@@ -666,7 +651,8 @@ namespace System.Collections.ObjectModel
         /// <param name="index">
         /// The index where the change takes place.
         /// </param>
-        private void OnCollectionChanged(NotifyCollectionChangedAction action, KeyValuePair<TKey, TValue> newItem, KeyValuePair<TKey, TValue> oldItem, int index)
+        private void OnCollectionChanged(NotifyCollectionChangedAction action, KeyValuePair<TKey, TValue> newItem, KeyValuePair<TKey, TValue> oldItem,
+            int index)
         {
             this.OnPropertyChanged();
             var handler = this.CollectionChanged;

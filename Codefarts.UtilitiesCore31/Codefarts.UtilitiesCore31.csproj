@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyVersion>2020.5.8.0</AssemblyVersion>
+    <FileVersion>2020.5.8.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="..\stylecop.json" Link="stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Codefarts.UtilitiesNETStd20\CollectionsOutOfSyncException.cs" Link="CollectionsOutOfSyncException.cs" />
+    <Compile Include="..\Codefarts.UtilitiesNETStd20\EqualityComparerCallback.cs" Link="EqualityComparerCallback.cs" />
+    <Compile Include="..\Codefarts.UtilitiesNETStd20\ObservableDictionary.cs" Link="ObservableDictionary.cs" />
+    <Compile Include="..\Codefarts.UtilitiesNETStd20\SyncronizedCollection.cs" Link="SyncronizedCollection.cs" />
+    <Compile Include="..\Codefarts.UtilitiesNETStd20\SyncronizedCollectionGroup.cs" Link="SyncronizedCollectionGroup.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="powershell.exe -ExecutionPolicy Unrestricted -noprofile -nologo -noninteractive -Command .'P:\PowerShell\post-build.ps1' -vs_BuildEvent:Post -vs_OutDir:'$(OutDir)' -vs_ConfigurationName:'$(ConfigurationName)' -vs_ProjectName:'$(ProjectName)' -vs_TargetName:'$(TargetName)' -vs_TargetPath:'$(TargetPath)' -vs_ProjectPath:'$(ProjectPath)' -vs_ProjectFileName:'$(ProjectFileName)' -vs_TargetExt:'$(TargetExt)' -vs_TargetFileName:'$(TargetFileName)' -vs_DevEnvDir:'$(DevEnvDir)' -vs_TargetDir:'$(TargetDir)' -vs_ProjectDir:'$(ProjectDir)' -vs_SolutionFileName:'$(SolutionFileName)' -vs_SolutionPath:'$(SolutionPath)' -vs_SolutionDir:'$(SolutionDir)' -vs_SolutionName:'$(SolutionName)' -vs_PlatformName:'$(PlatformName)' -vs_ProjectExt:'$(ProjectExt)' -vs_SolutionExt:'$(SolutionExt)'" />
+  </Target>
+
+</Project>
