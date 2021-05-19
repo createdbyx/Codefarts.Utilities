@@ -10,3 +10,8 @@ Codefarts.UtiltiesNETStd20/obj/
 Codefarts.Utilities.TestsNETCore/bin/
 Codefarts.UtiltiesNETStd20/bin/
 .vs/
+[Bb]in/
+[Oo]bj/
+.idea/
+*.user
+*.suo
