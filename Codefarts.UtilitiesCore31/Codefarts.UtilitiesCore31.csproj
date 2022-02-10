@@ -4,6 +4,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <AssemblyVersion>2020.5.8.0</AssemblyVersion>
     <FileVersion>2020.5.8.0</FileVersion>
+    <RootNamespace>Codefarts.Utilities</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

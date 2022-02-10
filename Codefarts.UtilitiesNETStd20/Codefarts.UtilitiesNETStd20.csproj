@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyVersion>2021.4.1.1</AssemblyVersion>
     <FileVersion>2021.4.1.1</FileVersion>
-    <RootNamespace>Codefarts.UtilitiesNETStd20</RootNamespace>
+    <RootNamespace>Codefarts.Utilities</RootNamespace>
     <AssemblyName>Codefarts.UtilitiesNETStd20</AssemblyName>
   </PropertyGroup>
 
